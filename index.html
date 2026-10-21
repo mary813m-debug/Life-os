@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life-os</title>
+<style>
+body{font-family:Arial,sans-serif;background:#0b1020;color:#f1f5f9;margin:0;line-height:1.8}
+header{text-align:center;background:#151d33;padding:30px 15px}
+h1{color:#60a5fa;font-size:38px}
+main{max-width:700px;margin:25px auto;padding:0 15px}
+.card{background:#151d33;border:1px solid #293650;border-radius:15px;padding:20px;margin:18px 0}
+h2{color:#93c5fd}
+input{padding:12px;width:60%;max-width:100%;background:#0b1020;color:white;border:1px solid #475569;border-radius:8px}
+button{padding:12px;background:#2563eb;color:white;border:0;border-radius:8px}
+li{margin:8px 0}
+footer{text-align:center;padding:20px;color:#94a3b8}
+</style>
+</head>
+<body>
+<header><h1>Life-os ✨</h1><p>نظّم حياتك، تعلّم كل يوم، واصنع مستقبلك.</p></header>
+<main>
+<section class="card"><h2>👋 أهلًا بك</h2><p>مساحتك الشخصية لتنظيم أهدافك وتطوير نفسك وتحسين حياتك خطوة بخطوة.</p></section>
+<section class="card"><h2>🎯 أهدافي</h2><form id="f"><input id="g" placeholder="اكتب هدفك هنا" required><button>إضافة</button></form><ul id="l"></ul></section>
+<section class="card"><h2>📚 التعلّم والتطوير</h2><ul><li>تعلّم لغة جديدة</li><li>طوّر مهاراتك الرقمية</li><li>اقرأ كل يوم</li></ul></section>
+<section class="card"><h2>💡 تذكير اليوم</h2><p>خطوة صغيرة كل يوم تصنع فرقًا كبيرًا مع الوقت.</p></section>
+</main>
+<footer>Life-os © 2026</footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();let i=document.getElementById('g');let x=document.createElement('li');x.textContent=i.value;document.getElementById('l').appendChild(x);i.value='';});
+</script>
+</body>
+</html>
